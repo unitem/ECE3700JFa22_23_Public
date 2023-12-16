@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/TLB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TLB
+INFO: [VRFC 10-311] analyzing module Page_table
+INFO: [VRFC 10-311] analyzing module main_memory
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_lab7

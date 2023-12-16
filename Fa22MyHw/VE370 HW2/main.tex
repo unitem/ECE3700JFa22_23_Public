@@ -1,0 +1,375 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{geometry}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{pdfpages}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{longtable}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\renewcommand{\labelenumi}{\alph{enumi}.}
+\geometry{left=2cm,right=2cm,top=3cm,bottom=3cm}
+
+\begin{document}
+
+\noindent\framebox[\linewidth]{\shortstack[c]{
+\Large{\textbf{Homework 2}}\vspace{1mm}\\
+VE370 - Intro to Computer Organization Summer 2022}}
+
+\begin{center}
+
+\footnotesize{\color{blue}$*$ Name: Huang Yucheng ID: 519021910885}
+\end{center}
+
+\section*{Exercise 1}
+Following memory location has address \verb|0x0F000000| and content \verb|0x15C78933|
+$$
+\begin{array}{|c|c|c|c|}
+\hline 0 & 1 & 2 & \multicolumn{1}{c|}{3} \\
+\hline 33 & 89 & \mathrm{C} 7 & 15 \\
+\hline
+\end{array}
+$$
+Write RISC-V assembly instructions to load the byte \verb|C7| as a signed number into register \verb|x20|, then show the content of \verb|x20| after the operations.
+
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\verb|lui x20, 0x0F000|
+
+\verb|lb x20, 2(x20)|
+
+and the content of \verb|x20| after the operations should be \verb|0xFFFFFFC7|
+
+\section*{Exercise 2}
+The RISC-V assembly program below computes the factorial of a given input $\mathrm{n}$ (n!). The integer input is passed through register \verb|x12|, and the result is returned in register \verb|x10|. In the assembly code below, there are a few errors. Correct the errors.
+
+$$
+\begin{aligned}
+\verb|FACT:| & \verb|addi sp, sp, 8| \\
+&\verb|sw x1, 4(sp)| \\
+&\verb|sw x12, 0(sp)| \\
+&\verb|add x18, x0, x12| \\
+&\verb|addi x5, x0, 2| \\
+&\verb|bge x12, x5, L1| \\
+&\verb|mul x10, x18, x10| \\
+&\verb|addi sp, sp, -8| \\
+&\verb|jalr x0, 0(x1)| \\
+\verb|L1:| & \verb|addi x12, x12, -1| \\
+&\verb|jal x1, FACT| \\
+&\verb|addi x10, x0, 1| \\
+&\verb|lw x12, 4(sp)| \\
+&\verb|lw x1, 0(sp)| \\
+&\verb|addi sp, sp, -8| \\
+&\verb|jalr x0, 0(x1)| \\
+\end{aligned}
+$$
+
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+$$
+\begin{aligned}
+\verb|FACT:| & {\color{red}\verb|addi sp, sp, -8|} \\
+&\verb|sw x1, 4(sp)| \\
+&\verb|sw x12, 0(sp)| \\
+&\verb|add x18, x0, x12| \\
+&{\color{red}\verb|addi x5, x0, 1|} \\
+&\verb|bge x12, x5, L1| \\
+&\verb|mul x10, x18, x10| \\
+&{\color{red}\verb|addi sp, sp, 8|} \\
+&\verb|jalr x0, 0(x1)| \\
+\verb|L1:| & \verb|addi x12, x12, -1| \\
+&\verb|jal x1, FACT| \\
+&\verb|addi x10, x0, 1| \\
+&{\color{red}\verb|lw x12, 0(sp)|} \\
+&{\color{red}\verb|lw x1, 4(sp)|} \\
+&{\color{red}\verb|addi sp, sp, 8|} \\
+&{\color{red}\verb|mul x10, x12, x10|} \\
+&\verb|jalr x0, 0(x1)| \\
+\end{aligned}
+$$
+
+\section*{Exercise 3}
+Consider a proposed new instruction named \verb|rpt|. This instruction combines a loop's condition check and counter decrement into a single instruction. For example,
+$$
+\verb|rpt x29, loop|
+$$
+would do the following:
+
+$$
+\begin{aligned}
+\verb|if | & \verb|(x29 > 0) {|\\
+&\verb|x29=x29-1;|\\
+&\verb|goto loop;| \\
+\verb|}|& \\
+\end{aligned}
+$$
+
+1) If this instruction were to be added to the RISC-V instruction set, what is the most appropriate instruction format?
+
+2) What is the shortest sequence of RISC-V instructions that performs the same operation?
+
+
+
+\vspace{1cm}
+
+\textbf{Answer:}
+
+1) I think the J format is the most suitable because it is like factorial, using recursive function to keep calling itself.
+
+2) 
+$$
+\begin{aligned}
+\verb|loop: | & \verb|addi x29, x29, -1|\\
+&\verb|bgt x29, x0, loop |\\
+&\verb|beq x29, x0, exit |\\
+\verb|exit: | & \verb|...|\\
+\end{aligned}
+$$
+
+
+
+\section*{Exercise 4}
+Implement the following $\mathrm{C}$ code in RISC-V assembly. Hint: Remember that the stack pointer must remain aligned on a multiple of $16 .$
+
+$$
+\begin{aligned}
+\verb|int | & \verb|fib(int n){|\\
+&\verb|if (n==0) return 0;|\\
+&\verb|else if (n==1) return 1;| \\
+&\verb|else return fib(n-1) + fib(n-2);| \\
+\verb|}|& \\
+\end{aligned}
+$$
+
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+
+
+$$
+\begin{aligned}
+\verb|fib: | & \verb|beq x10, x0, Exit|\\
+&\verb|addi x13, x0, 1|\\
+&\verb|beq x10, x13, Exit|\\
+&\verb|addi sp, sp, -8|\\
+&\verb|sw x1, 0(sp)|\\
+&\verb|sw x10, 4(sp)|\\
+&\verb|addi x10, x10, -1|\\
+&\verb|jal x1, fib|\\
+&\verb|lw x11, 4(sp)|\\
+&\verb|sw x10, 4(sp)|\\
+&\verb|addi x10, x11, -2|\\
+&\verb|jal x1, fib |\\
+&\verb|lw x12, 4(sp) |\\
+&\verb|add x10, x10, x12 |\\
+&\verb|lw x1, 0(sp) |\\
+&\verb|addi sp, sp, 8 |\\
+\verb|Exit: | & \verb|jalr x0, 0(x1)|\\
+\end{aligned}
+$$
+
+
+
+
+
+
+
+\section*{Exercise 5}
+For each function call in above problem, show the contents of the stack after the function call is made. Assume the stack pointer is originally at address \verb|0x7ffffffc|, and follow the register conventions.
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}
+    \item Assume that the variable n is initialized to 0 or 1. Then we do not need to use the stack, the address is always \verb|0x7ffffffc|.
+    \item Assume that the variable n is initialized to 2. We need to call fib itself once and the stack will grow for 8. the address will be \verb|0x7ffffff4|. After that, it will clear the stack and finally \verb|sp| will be \verb|0x7ffffffc| again.
+    \item Assume that the variable n is initialized to 3. We need to call fib itself twice and the stack will grow for 16. The deepest address will be \verb|0x7fffffec|. After that, it will clear the stack and finally \verb|sp| will be \verb|0x7ffffffc| again.
+    \item Assume that the variable n is initialized to n. We need to call fib itself $n-1$ times and the stack will grow for $8(n-1)$. It will copy the process for $n-1$ times.
+\end{enumerate}
+
+
+
+
+\section*{Exercise 6}
+
+Given a 32-bit RISC-V machine instruction:
+$$
+\verb|1111 1111 0110 1010 0001 1010 1110 0011|
+$$
+
+1) What does the assembly instruction do?
+
+2) What type of instruction is it?
+
+
+\textbf{Answer:}
+
+1) \verb|bne x20, x22, Target| and the Target is \verb|PC-12|
+
+2) B-type
+
+\section*{Exercise 7}
+
+Given RISC-V assembly instruction:
+$$
+\verb|lw x21, -32(sp)|
+$$
+
+1) What is the corresponding binary representation?
+
+2) What type of instruction is it?
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+1) \verb|1111 1110 0000 0001 0010 1010 1000 0011|
+
+2) I-type
+
+\section*{Exercise 8}
+
+If the RISC-V processor is modified to have 128 registers rather than 32 registers:
+\begin{enumerate}[1)]
+    \item Show the bit fields of an R-type format instruction assuming opcode and funcfields are not changed.
+    \item What would happen to the I-type instruction if we want to keep the total number of bits for an instruction unchanged?
+    \item What is the impact on the range of addresses for a beq instruction? Assume all instructions remain 32 bits long and the size of opcode and func fields don’t change.
+\end{enumerate}
+
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}[1)]
+    \item 
+    \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline funct7 & rs2 & rs 1 & funct3 & rd & opcode \\
+\hline 7 bits & 7 bits & 7 bits & 3 bits & 7 bits & 7 bits\\
+\hline
+\end{tabular}
+    \end{center}
+    
+    \item 
+    \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline immediate[7:0] & rs 1 & funct3 & rd & opcode \\
+\hline 8 bits & 7 bits & 3 bits & 7 bits & 7 bits\\
+\hline
+\end{tabular}
+    \end{center}
+    Since we cannot change the total bits(32). The immediate will be 4 bits shorter and can only have 8 bits.
+    \item Since rs2 and rs1 are both 2 bits longer. The immediate will be 4 bits shorter(from 12 to 8). As a result, the range of addresses is shorter (from $[-2^{12}, 2^{12}-1]$ to $[-2^{8}, 2^{8}-1]$)
+\end{enumerate}
+
+\section*{Exercise 9}
+
+Convert the following assembly code fragment into machine code, assuming the
+memory location of the first instruction (LOOP) is \verb|0x1000F400|
+
+$$
+\begin{aligned}
+\verb|LOOP: | & \verb|blt x0, x5, ELSE|\\
+&\verb|jal x0, DONE|\\
+\verb|ELSE: | & \verb|addi x5, x5, -1|\\
+&\verb|addi x25, x25, 2|\\
+&\verb|jal x0, LOOP|\\
+\verb|DONE: | & \verb|...|\\
+\end{aligned}
+$$
+
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}[1)]
+    \item \verb|LOOP: blt x0, x5, ELSE|. It is B-type, and the immediate is 4 =  \verb|0000 0000 0100|
+    
+        \begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline imm[11] & imm[9:4] & rs2 & rs 1 & funct3 & imm[3:0] & imm[10] & opcode \\
+\hline 0 & 000000 & 00101 & 00000 & 100 & 0100 & 0 & 1100011 \\
+\hline
+\end{tabular}
+\end{center}
+
+Finally, the machine code should be \verb|0000 0000 0101 0000 0100 0100 0110 0011|, or  \verb|0x00504463|
+
+    \item \verb|jal x0, DONE|. It is J-type, and the immediate is 8 =  \verb|0000 0000 0000 0000 1000|
+    
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline imm[19] & imm[9:0] & imm[10] & imm[18:11] & rd & opcode \\
+\hline 0 & 0000001000 & 0 & 00000000 & 00000 & 1101111 \\
+\hline
+\end{tabular}
+\end{center}
+
+Finally, the machine code should be \verb|0000 0001 0000 0000 0000 0000 0110 1111|, or  \verb|0x0100006F|
+
+\item \verb|ELSE: addi x5, x5, -1|. It is I-type, and the immediate is -1 =  \verb|1111 1111 1111|
+    
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline imm[11:0] & rs1 & funct3 & rd & opcode \\
+\hline 111111111111 & 00101 & 000 & 00101 & 0010011 \\
+\hline
+\end{tabular}
+\end{center}
+
+Finally, the machine code should be \verb|1111 1111 1111 0010 1000 0010 1001 0011|, or  \verb|0xFFF28293|
+
+\item \verb|addi x25, x25, 2|. It is I-type, and the immediate is 2 =  \verb|0000 0000 0010|
+    
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline imm[11:0] & rs1 & funct3 & rd & opcode \\
+\hline 000000000010 & 11001 & 000 & 11001 & 0010011 \\
+\hline
+\end{tabular}
+\end{center}
+
+Finally, the machine code should be \verb|0000 0000 0010 1100 1000 1100 1001 0011|, or  \verb|0x002C8C93|
+
+\item \verb|jal x0, LOOP|. It is J-type, and the immediate is -8 =  \verb|1111 1111 1111 1111 1000|
+    
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline imm[19] & imm[9:0] & imm[10] & imm[18:11] & rd & opcode \\
+\hline 1 & 1111111000 & 1 & 11111111 & 00000 & 1101111 \\
+\hline
+\end{tabular}
+\end{center}
+
+Finally, the machine code should be \verb|1111 1111 0001 1111 1111 0000 0110 1111|, or  \verb|0xFF1FF06F|
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

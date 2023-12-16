@@ -1,0 +1,23 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_lab7_behav xil_defaultlib.sim_lab7 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr_out' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v:36]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v:56]
+WARNING: [VRFC 10-3705] select index 12 into 'read_write_test' is out of bounds [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/TLB.v:282]
+WARNING: [VRFC 10-3705] select index 13 into 'read_write_test' is out of bounds [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/TLB.v:285]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TLB
+Compiling module xil_defaultlib.Page_table
+Compiling module xil_defaultlib.cache
+Compiling module xil_defaultlib.main_memory
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.sim_lab7
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_lab7_behav

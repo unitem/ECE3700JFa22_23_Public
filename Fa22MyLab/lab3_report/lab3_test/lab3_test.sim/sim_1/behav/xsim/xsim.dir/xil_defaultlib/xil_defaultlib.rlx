@@ -1,0 +1,27 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/campus/VE370/lab/lab3_test/lab3_test.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim1.v,1666105656,verilog,,,,sim1,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_ALU.v,1666702308,verilog,,,,sim_ALU,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_ALUctrl.v,1666704186,verilog,,,,sim_ALUctrl,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_Adder.v,1666702595,verilog,,,,sim_Adder,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_Control.v,1666703686,verilog,,,,sim_Control,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_DataMem.v,1666705655,verilog,,,,sim_DataMem,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_ImmGen.v,1666703152,verilog,,,,sim_ImmGen,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_InstMem.v,1666705097,verilog,,,,sim_InstMem,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_MUX.v,1666704568,verilog,,,,sim_MUX,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_reg.v,1666698628,verilog,,,,sim_reg,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/ALU.v,1665749432,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_ALU.v,,ALU,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/ALUctrl.v,1666092000,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_ALUctrl.v,,ALUctrl,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/Adder.v,1665741070,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_Adder.v,,Adder,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/Control.v,1666090664,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_Control.v,,Control,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/DataMem.v,1665748048,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_DataMem.v,,DataMem,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/ImmGen.v,1666091417,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_ImmGen.v,,ImmGen,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/InstMem.v,1666089239,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_InstMem.v,,InstMem,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/Mux.v,1665745181,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_MUX.v,,Mux,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/PC.v,1666081577,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/RegisterFile.v,,PC,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/RegisterFile.v,1666091175,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim_reg.v,,RegisterFile,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/Shifter.v,1665745324,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/top.v,,Shifter,,,,,,,,
+D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sources_1/new/top.v,1665756600,verilog,,D:/campus/VE370/lab/lab3_test/lab3_test.srcs/sim_1/new/sim1.v,,SingleCycleProcessor,,,,,,,,

@@ -1,0 +1,605 @@
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/campus/VE370/lab/lab6/lab6.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CacheTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/campus/VE370/lab/lab6/lab6.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CacheTest_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/campus/VE370/lab/lab6/lab6.sim/sim_1/behav/xsim'
+"xelab -wto 6c871d46156b44bc8dc8eb75bbe70e8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CacheTest_behav xil_defaultlib.CacheTest xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 6c871d46156b44bc8dc8eb75bbe70e8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CacheTest_behav xil_defaultlib.CacheTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/campus/VE370/lab/lab6/lab6.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CacheTest_behav -key {Behavioral:sim_1:Functional:CacheTest} -tclbatch {CacheTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source CacheTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+===============================================
+Clock cycle           0
+Read data = xxxxxxxx
+hit_miss = 0
+request num =  0
+address in = 1a8
+type in = 1
+valid[0] = 0
+valid[2] = 0
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 0
+tag[2] = 0
+data[2] = 00000000
+data[10] = xxxxxxxx
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           1
+Read data = xxxxxxxx
+hit_miss = 0
+request num =  0
+address in = 1a8
+type in = 1
+valid[0] = 0
+valid[2] = 0
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 0
+tag[2] = 0
+data[2] = 00000000
+data[10] = 000000d4
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           2
+Read data = xxxxxxxx
+hit_miss = 1
+request num =  0
+address in = 1a8
+type in = 1
+valid[0] = 0
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 0
+tag[2] = 6
+data[2] = 00000000
+data[10] = 000003ab
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           3
+Read data = 000003ab
+hit_miss = 1
+request num =  1
+address in = 1a8
+type in = 0
+valid[0] = 0
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 0
+tag[2] = 6
+data[2] = 00000000
+data[10] = 000003ab
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           4
+Read data = 000003ab
+hit_miss = 1
+request num =  2
+address in = 1a8
+type in = 1
+valid[0] = 0
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 0
+tag[2] = 6
+data[2] = 00000000
+data[10] = 000003ac
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           5
+Read data = 000003ac
+hit_miss = 1
+request num =  3
+address in = 1a8
+type in = 0
+valid[0] = 0
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 0
+tag[2] = 6
+data[2] = 00000000
+data[10] = 000003ac
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           6
+Read data = 000003ac
+hit_miss = 0
+request num =  4
+address in = 108
+type in = 0
+valid[0] = 0
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 0
+tag[2] = 6
+data[2] = 00000000
+data[10] = 000003ac
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           7
+Read data = 00000084
+hit_miss = 1
+request num =  4
+address in = 108
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ac
+Mem[01101010] = 000000d4
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           8
+Read data = 00000084
+hit_miss = 0
+request num =  5
+address in = 128
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ac
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle           9
+Read data = 00000084
+hit_miss = 0
+request num =  5
+address in = 128
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ac
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          10
+Read data = 00000084
+hit_miss = 0
+request num =  5
+address in = 128
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ac
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          11
+Read data = 00000094
+hit_miss = 1
+request num =  5
+address in = 128
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 4
+data[2] = 00000084
+data[10] = 00000094
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          12
+Read data = 00000094
+hit_miss = 0
+request num =  6
+address in = 1a8
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 4
+data[2] = 00000084
+data[10] = 00000094
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          13
+Read data = 000003ac
+hit_miss = 1
+request num =  6
+address in = 1a8
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ac
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          14
+Read data = 000003ac
+hit_miss = 1
+request num =  7
+address in = 1a8
+type in = 1
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ac
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          15
+Read data = 000003ac
+hit_miss = 0
+request num =  8
+address in = 168
+type in = 1
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          16
+Read data = 000003ac
+hit_miss = 0
+request num =  8
+address in = 168
+type in = 1
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          17
+Read data = 000003ac
+hit_miss = 0
+request num =  8
+address in = 168
+type in = 1
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          18
+Read data = 000003ac
+hit_miss = 1
+request num =  8
+address in = 168
+type in = 1
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 5
+data[2] = 00000084
+data[10] = 000003ae
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          19
+Read data = 000003ae
+hit_miss = 1
+request num =  9
+address in = 168
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 5
+data[2] = 00000084
+data[10] = 000003ae
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000000b4
+===============================================
+===============================================
+Clock cycle          20
+Read data = 000003ae
+hit_miss = 0
+request num = 10
+address in = 1a8
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 1
+tag[0] = 4
+tag[2] = 5
+data[2] = 00000084
+data[10] = 000003ae
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          21
+Read data = 000003ae
+hit_miss = 0
+request num = 10
+address in = 1a8
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 5
+data[2] = 00000084
+data[10] = 000003ae
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          22
+Read data = 000003ae
+hit_miss = 0
+request num = 10
+address in = 1a8
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 5
+data[2] = 00000084
+data[10] = 000003ae
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          23
+Read data = 000003ad
+hit_miss = 1
+request num = 10
+address in = 1a8
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          24
+Read data = 00000003
+hit_miss = 1
+request num = 11
+address in = 1a9
+type in = 0
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          25
+Read data = 00000003
+hit_miss = 0
+request num = 12
+address in = xxx
+type in = x
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          26
+Read data = 000000xx
+hit_miss = 1
+request num = 12
+address in = xxx
+type in = x
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+===============================================
+Clock cycle          27
+Read data = 000000xx
+hit_miss = 1
+request num = 13
+address in = xxx
+type in = x
+valid[0] = 1
+valid[2] = 1
+dirty[0] = 0
+dirty[2] = 0
+tag[0] = 4
+tag[2] = 6
+data[2] = 00000084
+data[10] = 000003ad
+Mem[01101010] = 000003ad
+Mem[01000010] = 00000084
+Mem[01001010] = 00000094
+Mem[01011010] = 000003ae
+===============================================
+$stop called at time : 280 ns : File "D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/Lab6_cache_test.v" Line 61
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CacheTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1805.574 ; gain = 0.000

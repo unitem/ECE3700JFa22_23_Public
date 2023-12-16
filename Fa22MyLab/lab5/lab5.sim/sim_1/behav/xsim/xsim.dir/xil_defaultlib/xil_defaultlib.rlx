@@ -1,0 +1,9 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/campus/courses/TA-ECE37000J/VE370/lab/lab5-submission/source/Fowarding.v,1668356712,verilog,,D:/campus/courses/TA-ECE37000J/VE370/lab/lab5-submission/source/Hazard.v,,Forwarding,,,,,,,,
+D:/campus/courses/TA-ECE37000J/VE370/lab/lab5-submission/source/Hazard.v,1668699460,verilog,,D:/campus/courses/TA-ECE37000J/VE370/lab/lab5-submission/source/cpu.v,,Hazard,,,,,,,,
+D:/campus/courses/TA-ECE37000J/VE370/lab/lab5-submission/source/cpu.v,1668699488,verilog,,D:/campus/courses/TA-ECE37000J/lab files/Lab5 testbench.v,,ALU;ALU_Control;Comparator;Control;Data_Memory;EX_MEM_State_Reg;ID_EX_State_Reg;IF_ID_State_Reg;Immediate_Generator;Instruction_Memory;MEM_WB_State_Reg;MUX_2to1;MUX_4to1;Register_File;cpu,,,,,,,,
+D:/campus/courses/TA-ECE37000J/VE370/lab/lab5/lab5.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/campus/courses/TA-ECE37000J/lab files/Lab5 testbench.v,1699924943,verilog,,,,singleCycleTest,,,,,,,,

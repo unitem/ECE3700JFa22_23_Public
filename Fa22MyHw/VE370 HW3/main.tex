@@ -1,0 +1,213 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{geometry}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{pdfpages}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{longtable}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\renewcommand{\labelenumi}{\alph{enumi}.}
+\geometry{left=2cm,right=2cm,top=3cm,bottom=3cm}
+
+\begin{document}
+
+\noindent\framebox[\linewidth]{\shortstack[c]{
+\Large{\textbf{Homework 3}}\vspace{1mm}\\
+VE370 - Intro to Computer Organization Summer 2022}}
+
+\begin{center}
+
+\footnotesize{\color{blue}$*$ Name: Huang Yucheng ID: 519021910885}
+\end{center}
+
+\section*{Exercise 1}
+Given RISC-V assembly instruction sequence:
+
+\verb|bne x22, x23, Else|
+
+\verb|add x19, x20, x21|
+
+\verb|beq x0, x0, Exit|
+
+\verb|Else: lw x19, 0(x20)|
+
+\verb|Exit: ...|
+
+Assuming the memory location of the first instruction (bne) is \verb|0x1000F400|, what are the values of the following control signals for each of the instructions?
+
+$$
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+\hline \text {Instruction} & \text{Branch}& \text{MemRead}& \text{MemtoReg}& \text{ALUOp}& \text{MemWrite}&\text{ALUSrc} & \text{RegWrite}&\text{Zero} &\text{Imm} \\
+\hline \text {add} & & & & & & & & & \\
+\hline \text {beq} & & & & & & & & & \\
+\hline \text {lw} & & & & & & & & & \\
+\hline
+\end{array}
+$$
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+$$
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+\hline \text {Instruction} & \text{Branch}& \text{MemRead}& \text{MemtoReg}& \text{ALUOp}& \text{MemWrite}&\text{ALUSrc} & \text{RegWrite}&\text{Zero} &\text{Imm} \\
+\hline \text {add} &0 &0 &0 &10 &0 &0 &1 &0 &1 \\
+\hline \text {beq} &1 &0 &0 &01 &0 &0 &0 &1 &1 \\
+\hline \text {lw} &0 &1 &1 &00 &0 &1 &1 &0 &0 \\
+\hline
+\end{array}
+$$
+
+\section*{Exercise 2}
+Given following assembly instruction: 
+
+\verb|and rd, rs1, rs2|
+
+(1) Which resources (blocks) perform a useful function for this instruction? 
+
+(2) Which resources (blocks) produce no output for this instruction? Which resources produce output that is not used? 
+
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}[(1)]
+    \item We need: PC, ALU, Registers and mux for ALU/Memory.
+    \item Every block has output, but output of Immgen is not used.
+\end{enumerate}
+
+\section*{Exercise 3}
+
+Consider the following instruction mix:
+
+\begin{tabular}{|c|l|l|l|l|l|}
+
+\hline R-type & I-type (non-lw) & Load & Store & Branch & Jump \\
+
+\hline $24 \%$ & $28 \%$ & $25 \%$ & $10 \%$ & $11 \%$ & $2 \%$ \\
+
+\hline
+
+\end{tabular}
+
+(1) What fraction of all instructions use data memory?
+
+(2) What fraction of all instructions use instruction memory?
+
+(3) What fraction of all instructions use the sign extend?
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}[(1)]
+    \item $25 \%+10 \%=35 \%$
+    \item $100 \%$
+    \item $28 \%+25 \%+10 \%+11 \%+2 \%=76 \%$
+\end{enumerate}
+
+
+
+\section*{Exercise 4}
+
+When silicon chips are fabricated, defects in materials (e.g., silicon) and manufacturing errors can result in defective circuits. A very common defect is for one signal wire to get "broken" and always read a logical 0 . This is often called a "stuck-at- 0 " fault.
+
+(1) Which instructions fail to operate correctly if the MemToReg wire is stuck at 0 ? (5 points)
+
+(2) Which instructions fail to operate correctly if the ALUSrc wire is stuck at 0 ? (5 points)
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}[(1)]
+    \item Since MemToReg connects to the memory block and another mux, if it always reads a logical 0, the instructions need loading may not work, such as lw/lb.
+    \item Since ALUSrc connects to the middle register which operates the instruction and it will only reads a 0. So all the I-type, S-type will not work now.
+\end{enumerate}
+
+
+
+
+
+\section*{Exercise 5}
+
+Problems in this exercise assume that the logic blocks used to implement a processor's datapath have the following latencies:
+
+\vspace{0.3cm}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline I/D-Mem & RegiFile & Mux & ALU & Adder & Singate & RegiRead & RegiSetup & Sigtend & Control \\
+\hline $250 \mathrm{ps}$ & $150 \mathrm{ps}$ & $25 \mathrm{ps}$ & $200 \mathrm{ps}$ & $150 \mathrm{ps}$ & $5 \mathrm{ps}$ & $30 \mathrm{ps}$ & $20 \mathrm{ps}$ & $50 \mathrm{ps}$ & $50 \mathrm{ps}$ \\
+\hline
+\end{tabular}
+
+\vspace{0.3cm}
+
+In above table, "Register Read" is the time needed after the rising clock edge for the new register value to appear on the output. This value applies to the PC only. "Register Setup" is the amount of time a register's data input must be stable before the rising edge of the clock. This value applies to both the $\mathrm{PC}$ and Register File.
+
+(1) What is the latency of an R-type instruction (i.e., how long must the clock period be to ensure that this instruction works correctly)? 
+
+(2) What is the latency of lw? 
+
+(3) What is the latency of sw? 
+
+(4) What is the latency of beq? 
+
+(5) What is the latency of an arithmetic, logical, or shift I-type (non-load) instruction? 
+
+(6) What is the minimum clock period for this CPU?
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+\begin{enumerate}[(1)]
+    \item 30+250+150+25+200+25+20 = 700 ps
+    \item 30+250+150+25+200+250+25+20 = 950 ps
+    \item 30+250+150+25+200+250 = 905 ps
+    \item 30+250+150+25+200+5+25+20 = 705 ps
+    \item 30+250+150+25+200+25+20 = 700 ps
+    \item 30+250+150+25+200+250+25+20 = 950 ps
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\section*{Exercise 6}
+
+Modify the single-cycle processor datapath to add a proposed new assembly instruction:
+
+\verb|ss rs1, rs2, immediate #Store Sum|
+
+Operation: $\operatorname{Mem}[\operatorname{Reg}[\mathrm{rs} 1]]=\operatorname{Reg}[\mathrm{rs} 2]+$ immediate
+
+\vspace{0.3cm}
+
+\textbf{Answer:}
+
+First, we should place a new mux which connects Reg[rs1] and Reg[rs2], so that the control can choose the correct register. Second, we should place another mux which connects output and rs1, which can store the memory. Finally, other operation blocks are not necessarily modified.
+
+
+
+
+
+
+\end{document}

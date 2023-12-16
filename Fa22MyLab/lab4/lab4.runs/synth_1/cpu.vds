@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Nov  9 15:15:18 2023
+# Process ID: 31520
+# Current directory: D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.runs/synth_1
+# Command line: vivado.exe -log cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+# Log file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.runs/synth_1/cpu.vds
+# Journal file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.runs/synth_1\vivado.jou
+# Running On: DESKTOP-NLBNSIA, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34138 MB
+#-----------------------------------------------------------
+source cpu.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 449.312 ; gain = 158.742
+Command: synth_design -top cpu -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31368
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 887.695 ; gain = 414.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:195]
+INFO: [Synth 8-6157] synthesizing module 'Central_Control_Unit' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:503]
+INFO: [Synth 8-6155] done synthesizing module 'Central_Control_Unit' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:503]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:296]
+INFO: [Synth 8-6157] synthesizing module 'Immediate_Generator' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'Immediate_Generator' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:329]
+INFO: [Synth 8-6157] synthesizing module 'N_bit_ALU' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'N_bit_ALU' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:375]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:443]
+INFO: [Synth 8-226] default block is never used [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:451]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:443]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:653]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:653]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID_State_Reg' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:700]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID_State_Reg' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:700]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX_State_Reg' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:724]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX_State_Reg' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:724]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_State_Reg' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:783]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_State_Reg' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:783]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_State_Reg' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:833]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_State_Reg' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:833]
+INFO: [Synth 8-6157] synthesizing module '_32_bit_2to1_MUX' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:617]
+INFO: [Synth 8-226] default block is never used [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:625]
+INFO: [Synth 8-6155] done synthesizing module '_32_bit_2to1_MUX' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:617]
+INFO: [Synth 8-6157] synthesizing module '_32_bit_4to2_MUX' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:633]
+INFO: [Synth 8-226] default block is never used [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:641]
+INFO: [Synth 8-6155] done synthesizing module '_32_bit_4to2_MUX' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:633]
+INFO: [Synth 8-6157] synthesizing module '_32_bit_Adder' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:490]
+INFO: [Synth 8-6155] done synthesizing module '_32_bit_Adder' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:490]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:23]
+WARNING: [Synth 8-7129] Port clock in module Register_File is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 996.820 ; gain = 523.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 996.820 ; gain = 523.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 996.820 ; gain = 523.637
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[31]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[30]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[29]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[28]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[27]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[26]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[25]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[24]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[23]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[22]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[21]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[20]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[19]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[18]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[17]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[16]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[15]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[14]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[13]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[12]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[11]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[10]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[9]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[8]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[7]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[6]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[5]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[4]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[3]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[2]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[1]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[0]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:317]
+WARNING: [Synth 8-327] inferring latch for variable 'Zero_reg' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:393]
+WARNING: [Synth 8-327] inferring latch for variable 'R_data_out_reg' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:685]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[15]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[14]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[13]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[12]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[11]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[10]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[9]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[8]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[7]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[6]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[5]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[4]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[3]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[2]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[1]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[0]' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.srcs/sources_1/new/cpu.v:670]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1008.238 ; gain = 535.055
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 16    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  82 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 10    
+	   2 Input    8 Bit        Muxes := 30    
+	   3 Input    8 Bit        Muxes := 16    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   8 Input    2 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 70    
+	  12 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 17    
+	  16 Input    1 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port clock in module Register_File is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[31][0]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[30][0]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[29][0]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[28][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[28][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[28][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (RF/data_reg[28][28]) is unused and will be removed from module cpu.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1263 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1178.328 ; gain = 705.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1178.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1277.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 358d6b89
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 178 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 1277.992 ; gain = 828.680
+INFO: [Common 17-1381] The checkpoint 'D:/campus/courses/TA-ECE37000J/VE370/lab/lab4/lab4.runs/synth_1/cpu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_utilization_synth.rpt -pb cpu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 15:15:52 2023...

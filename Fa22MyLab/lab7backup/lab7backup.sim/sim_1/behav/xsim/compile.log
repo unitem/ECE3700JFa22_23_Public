@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/VE370/lab/lab7backup/lab7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module New_Cache
+INFO: [VRFC 10-311] analyzing module TLB
+INFO: [VRFC 10-311] analyzing module Main_Memory
+INFO: [VRFC 10-311] analyzing module PageTable
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/VE370/lab/lab7backup/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_4
+INFO: [VRFC 10-311] analyzing module MUX_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/VE370/lab/lab7backup/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
+INFO: [VRFC 10-2458] undeclared symbol hit, assumed default net type wire [D:/campus/VE370/lab/lab7backup/sim1.v:41]
+INFO: [VRFC 10-2458] undeclared symbol TLB_hit, assumed default net type wire [D:/campus/VE370/lab/lab7backup/sim1.v:43]
+INFO: [VRFC 10-2458] undeclared symbol page_fault, assumed default net type wire [D:/campus/VE370/lab/lab7backup/sim1.v:45]
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/VE370/lab/lab7backup/lab7backup.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

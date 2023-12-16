@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 21 01:54:30 2022
+# Process ID: 23780
+# Current directory: D:/campus/VE370/lab/lab6/lab6.runs/synth_1
+# Command line: vivado.exe -log CacheTest.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CacheTest.tcl
+# Log file: D:/campus/VE370/lab/lab6/lab6.runs/synth_1/CacheTest.vds
+# Journal file: D:/campus/VE370/lab/lab6/lab6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CacheTest.tcl -notrace
+Command: synth_design -top CacheTest -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3508
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1025.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CacheTest' [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/Lab6_cache_test.v:19]
+	Parameter half_period bound to: 5 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/Lab6_cache_test.v:25]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/Lab6_cache_test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cache' [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/cache.v:23]
+ERROR: [Synth 8-27] event control except as first statement of always block not supported [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/cache.v:83]
+ERROR: [Synth 8-6156] failed synthesizing module 'cache' [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/cache.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/Lab6_cache_test.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'CacheTest' [D:/campus/VE370/lab/lab6/lab6.srcs/sources_1/new/Lab6_cache_test.v:19]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1025.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+8 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 01:54:37 2022...

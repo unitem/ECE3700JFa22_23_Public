@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct  8 11:57:42 2022
+# Process ID: 19876
+# Current directory: D:/campus/VE370/HW/HW2/problem8/problem8.runs/impl_1
+# Command line: vivado.exe -log reg_32.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source reg_32.tcl -notrace
+# Log file: D:/campus/VE370/HW/HW2/problem8/problem8.runs/impl_1/reg_32.vdi
+# Journal file: D:/campus/VE370/HW/HW2/problem8/problem8.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source reg_32.tcl -notrace

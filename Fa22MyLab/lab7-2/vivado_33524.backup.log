@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Dec  2 22:36:46 2023
+# Process ID: 33524
+# Current directory: D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2936 D:\campus\courses\TA-ECE37000J\VE370\lab\lab7-2\lab7-2.xpr
+# Log file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/vivado.log
+# Journal file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2\vivado.jou
+# Running On: DESKTOP-NLBNSIA, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34138 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx_Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.xpr
+INFO: [Project 1-313] Project file moved from 'D:/campus/VE370/lab/lab7-2' since last save.
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.srcs/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'lab7-2.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx_Vivado/Vivado/2023.1/data/ip'.
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sim_lab7'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_lab7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_lab7_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/TLB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TLB
+INFO: [VRFC 10-311] analyzing module Page_table
+INFO: [VRFC 10-311] analyzing module main_memory
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_lab7
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_lab7_behav xil_defaultlib.sim_lab7 xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_lab7_behav xil_defaultlib.sim_lab7 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr_out' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v:36]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr' [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v:56]
+WARNING: [VRFC 10-3705] select index 12 into 'read_write_test' is out of bounds [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/TLB.v:282]
+WARNING: [VRFC 10-3705] select index 13 into 'read_write_test' is out of bounds [D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/TLB.v:285]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TLB
+Compiling module xil_defaultlib.Page_table
+Compiling module xil_defaultlib.cache
+Compiling module xil_defaultlib.main_memory
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.sim_lab7
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_lab7_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_lab7_behav -key {Behavioral:sim_1:Functional:sim_lab7} -tclbatch {sim_lab7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source sim_lab7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Request  0: 
+page fault: 0
+data read posedge: xxxxxxxx
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 11, VPN: 2
+block 01: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+block 10: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+block 11: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 11: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+Request  1: 
+page fault: 0
+data read posedge: xxxxxxxx
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 10, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 10: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+block 11: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 00000199, word2: 00000195, word3: 00000dac
+block 11: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+Request  2: 
+page fault: 0
+data read posedge: xxxxxxxx
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 01, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 11, VPN: 3
+block 11: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 00000199, word2: 00000195, word3: 00000dac
+block 11: tag: 11100, valid: 1, dirty: 1, word0: 0000039d, word1: 00000395, word2: 00000fac, word3: 00000391
+Request  3: 
+page fault: 0
+data read posedge: xxxxxxxx
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 00, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 10, VPN: 3
+block 11: tag: x, valid: 0, dirty: 0, reference: 00, VPN: x
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 00000199, word2: 0000ac95, word3: 00000dac
+block 11: tag: 11100, valid: 1, dirty: 1, word0: 0000039d, word1: 00000395, word2: 00000fac, word3: 00000391
+Request  4: 
+page fault: 0
+data read posedge: 00000001
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 00, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 01, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 11, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 00000199, word2: 0000ac95, word3: 00000dac
+block 11: tag: 11100, valid: 1, dirty: 1, word0: 0000039d, word1: 00000395, word2: 00000fac, word3: 00000391
+Request  5: 
+page fault: 0
+data read posedge: 00000001
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 01, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 00, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 10, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 00000199, word2: 0000ac95, word3: 00000dac
+block 11: tag: 01110, valid: 1, dirty: 1, word0: 000001dd, word1: 000001d9, word2: 000001d5, word3: 000001d1
+Request  6: 
+page fault: 0
+data read posedge: 000003d9
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 11, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 01, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 11110, valid: 1, dirty: 1, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01110, valid: 1, dirty: 1, word0: 000001dd, word1: 000001d9, word2: 000001d5, word3: 000001d1
+Request  7: 
+page fault: 0
+data read posedge: 000003d9
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 1, reference: 01, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 10, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 11, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 11110, valid: 1, dirty: 1, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 48000199, word2: 0000ac95, word3: 00000dac
+Request  8: 
+page fault: 0
+data read posedge: 0000ac95
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 01, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 10, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 11110, valid: 1, dirty: 1, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 48000199, word2: 0000ac95, word3: 00000dac
+Request  9: 
+page fault: 0
+data read posedge: 48000199
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 00, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 01, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 11110, valid: 1, dirty: 1, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 48000199, word2: 0000ac95, word3: 00000dac
+Request 10: 
+page fault: 0
+data read posedge: 000001d9
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 00, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 00, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 0000028d, word1: 00000285, word2: 00000001, word3: 00000281
+block 01: tag: 00000, valid: 0, dirty: 0, word0: xxxxxxxx, word1: xxxxxxxx, word2: xxxxxxxx, word3: xxxxxxxx
+block 10: tag: 01110, valid: 1, dirty: 1, word0: 000001dd, word1: 000001d9, word2: 000001d5, word3: 000001d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000191, word1: 48000199, word2: 0000ac95, word3: 00000dac
+$stop called at time : 550 ns : File "D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/sim_lab7.v" Line 98
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_lab7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1354.961 ; gain = 52.043
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 10:21:31 2023...

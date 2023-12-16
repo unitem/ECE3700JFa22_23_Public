@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Oct 16 18:20:41 2023
+# Process ID: 32504
+# Current directory: D:/campus/courses/TA-ECE37000J/VE370/lab/lab3_report/lab3_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33816 D:\campus\courses\TA-ECE37000J\VE370\lab\lab3_report\lab3_test\lab3_test.xpr
+# Log file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab3_report/lab3_test/vivado.log
+# Journal file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab3_report/lab3_test\vivado.jou
+# Running On: DESKTOP-NLBNSIA, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34138 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/campus/courses/TA-ECE37000J/VE370/lab/lab3_report/lab3_test/lab3_test.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

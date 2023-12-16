@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Dec  8 17:37:14 2022
+# Process ID: 17780
+# Current directory: D:/campus/VE370/lab/lab7backup
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20228 D:\campus\VE370\lab\lab7backup\lab7backup.xpr
+# Log file: D:/campus/VE370/lab/lab7backup/vivado.log
+# Journal file: D:/campus/VE370/lab/lab7backup\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/campus/VE370/lab/lab7backup/lab7backup.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim1.tcl
+create_project lab7-2 D:/campus/VE370/lab/lab7-2 -part xc7k70tfbv676-1
+add_files -norecurse {D:/campus/VE370/lab/lab7-2/TLB.v D:/campus/VE370/lab/lab7-2/sim_lab7.v}
+update_compile_order -fileset sources_1
+close_project
+close_sim

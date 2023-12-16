@@ -1,0 +1,26 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0ccccb5cd0bf45ac9df178b3d77da50d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 's' [D:/campus/VE370/lab/lab7backup/lab7.v:92]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 10 for port 'P_addr_PT_in' [D:/campus/VE370/lab/lab7backup/sim1.v:43]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/campus/VE370/lab/lab7backup/lab7.v:95]
+WARNING: [VRFC 10-3091] actual bit length 776 differs from formal bit length 32 for port 'MUXinput1' [D:/campus/VE370/lab/lab7backup/lab7.v:95]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 's' [D:/campus/VE370/lab/lab7backup/lab7.v:96]
+WARNING: [VRFC 10-3705] select index 13 into 'RW_test' is out of bounds [D:/campus/VE370/lab/lab7backup/sim1.v:138]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.MUX_4
+Compiling module xil_defaultlib.MUX_8
+Compiling module xil_defaultlib.New_Cache_default
+Compiling module xil_defaultlib.TLB
+Compiling module xil_defaultlib.Main_Memory
+Compiling module xil_defaultlib.PageTable
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav

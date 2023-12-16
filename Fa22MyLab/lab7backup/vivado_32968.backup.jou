@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Dec  3 16:15:54 2023
+# Process ID: 32968
+# Current directory: D:/campus/courses/TA-ECE37000J/VE370/lab/lab7backup
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34088 D:\campus\courses\TA-ECE37000J\VE370\lab\lab7backup\lab7backup.xpr
+# Log file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab7backup/vivado.log
+# Journal file: D:/campus/courses/TA-ECE37000J/VE370/lab/lab7backup\vivado.jou
+# Running On: DESKTOP-NLBNSIA, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34138 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/campus/courses/TA-ECE37000J/VE370/lab/lab7-2/lab7-2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_lab7.tcl
+close_sim
+launch_simulation
+source sim_lab7.tcl
+close_sim

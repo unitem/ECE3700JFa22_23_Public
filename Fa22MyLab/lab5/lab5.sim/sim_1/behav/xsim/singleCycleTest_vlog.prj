@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../lab5-submission/source/Fowarding.v" \
+"../../../../../lab5-submission/source/Hazard.v" \
+"../../../../../lab5-submission/source/cpu.v" \
+"../../../../../../../lab files/Lab5 testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

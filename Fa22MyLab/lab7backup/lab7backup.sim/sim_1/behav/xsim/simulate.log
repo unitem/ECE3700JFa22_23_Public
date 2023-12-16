@@ -1,0 +1,241 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Request  0: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000001
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 00, VPN: 2
+block 01: tag:  0, valid: 0, dirty: 0, reference: 11, VPN: 0
+block 10: tag:  0, valid: 0, dirty: 0, reference: 10, VPN: 0
+block 11: tag:  0, valid: 0, dirty: 0, reference: 01, VPN: 0
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 11: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+Request  1: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000dac
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 01, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 10: tag:  0, valid: 0, dirty: 0, reference: 11, VPN: 0
+block 11: tag:  0, valid: 0, dirty: 0, reference: 10, VPN: 0
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000dac, word1: 00000199, word2: 00000195, word3: 00000191
+block 11: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+Request  2: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000fac
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 10, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 01, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 00, VPN: 3
+block 11: tag:  0, valid: 0, dirty: 0, reference: 11, VPN: 0
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000dac, word1: 00000199, word2: 00000195, word3: 00000191
+block 11: tag: 11100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 00000000, word3: 00000000
+Request  3: 
+page fault: 0
+cache hit: 1
+data read posedge: 000000ac
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 10, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 01, VPN: 3
+block 11: tag:  0, valid: 0, dirty: 0, reference: 11, VPN: 0
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000dac, word1: 00000199, word2: 0000ac95, word3: 00000191
+block 11: tag: 11100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 00000000, word3: 00000000
+Request  4: 
+page fault: 0
+cache hit: 1
+data read posedge: 000000ac
+contents in TLB: 
+block 00: tag:  4, valid: 1, dirty: 1, reference: 11, VPN: 2
+block 01: tag:  0, valid: 1, dirty: 1, reference: 01, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 10, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 0, reference: 00, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 00000dac, word1: 00000199, word2: 0000ac95, word3: 00000191
+block 11: tag: 11100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 00000000, word3: 00000000
+Request  5: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000000
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 0, reference: 00, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 11, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 0, reference: 01, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01100, valid: 1, dirty: 1, word0: 000001dd, word1: 000001d9, word2: 000001d5, word3: 000001d1
+block 11: tag: 01110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 00000000, word3: 00000000
+Request  6: 
+page fault: 0
+cache hit: 1
+data read posedge: 000003d5
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 0, reference: 01, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 00, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 0, reference: 10, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 11110, valid: 1, dirty: 0, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 00000000, word3: 00000000
+Request  7: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000048
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 0, reference: 10, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 11, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 01, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 00, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 11110, valid: 1, dirty: 0, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request  8: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000fac
+contents in TLB: 
+block 00: tag:  8, valid: 1, dirty: 0, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 10, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 01, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 11110, valid: 1, dirty: 0, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request  9: 
+page fault: 0
+cache hit: 1
+data read posedge: 48000000
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 00, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 01, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 11, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 10, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 11110, valid: 1, dirty: 0, word0: 000003dd, word1: 000003d9, word2: 000003d5, word3: 000003d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 10: 
+page fault: 0
+cache hit: 1
+data read posedge: 000001d5
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 01, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 00, VPN: 1
+block 10: tag:  1, valid: 1, dirty: 1, reference: 11, VPN: 3
+block 11: tag:  7, valid: 1, dirty: 1, reference: 10, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000001dd, word1: 000001d9, word2: 000001d5, word3: 000001d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 11: 
+page fault: 0
+cache hit: 1
+data read posedge: 00000001
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 10, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 01, VPN: 1
+block 10: tag:  4, valid: 1, dirty: 0, reference: 00, VPN: 2
+block 11: tag:  7, valid: 1, dirty: 1, reference: 11, VPN: 1
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000001dd, word1: 000001d9, word2: 000001d5, word3: 000001d1
+block 11: tag: 01100, valid: 1, dirty: 1, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 12: 
+page fault: 1
+cache hit: 1
+data read posedge: 48000000
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  4, valid: 1, dirty: 0, reference: 01, VPN: 2
+block 11: tag:  2, valid: 1, dirty: 0, reference: 00, VPN: 2
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000002dd, word1: 000002d9, word2: 000002d5, word3: 000002d1
+block 11: tag: 10110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 13: 
+page fault: 1
+cache hit: x
+data read posedge: 00000000
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  4, valid: 1, dirty: 0, reference: 01, VPN: 2
+block 11: tag:  2, valid: 1, dirty: 0, reference: 00, VPN: 2
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000002dd, word1: 000002d9, word2: 000002d5, word3: 000002d1
+block 11: tag: 10110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 13: 
+page fault: 1
+cache hit: x
+data read posedge: 00000000
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  4, valid: 1, dirty: 0, reference: 01, VPN: 2
+block 11: tag:  2, valid: 1, dirty: 0, reference: 00, VPN: 2
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000002dd, word1: 000002d9, word2: 000002d5, word3: 000002d1
+block 11: tag: 10110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 13: 
+page fault: 1
+cache hit: x
+data read posedge: 00000000
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  4, valid: 1, dirty: 0, reference: 01, VPN: 2
+block 11: tag:  2, valid: 1, dirty: 0, reference: 00, VPN: 2
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000002dd, word1: 000002d9, word2: 000002d5, word3: 000002d1
+block 11: tag: 10110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+Request 13: 
+page fault: 1
+cache hit: x
+data read posedge: 00000000
+contents in TLB: 
+block 00: tag: 10, valid: 1, dirty: 0, reference: 11, VPN: 1
+block 01: tag:  0, valid: 1, dirty: 1, reference: 10, VPN: 1
+block 10: tag:  4, valid: 1, dirty: 0, reference: 01, VPN: 2
+block 11: tag:  2, valid: 1, dirty: 0, reference: 00, VPN: 2
+contents in cache: 
+block 00: tag: 10100, valid: 1, dirty: 1, word0: 00000000, word1: 00000001, word2: 00000000, word3: 00000000
+block 01: tag: 00000, valid: 0, dirty: 0, word0: 00000000, word1: 00000000, word2: 00000000, word3: 00000000
+block 10: tag: 01110, valid: 1, dirty: 0, word0: 000002dd, word1: 000002d9, word2: 000002d5, word3: 000002d1
+block 11: tag: 10110, valid: 1, dirty: 0, word0: 00000000, word1: 00000fac, word2: 48000000, word3: 00000000
+$stop called at time : 1 us : File "D:/campus/VE370/lab/lab7backup/sim1.v" Line 97

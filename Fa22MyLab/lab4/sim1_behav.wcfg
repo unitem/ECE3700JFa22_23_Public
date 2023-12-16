@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="88.901 ns"></ZoomEndTime>
+      <Cursor1Time time="19.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/sim1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/Instruct" type="array">
+      <obj_property name="ElementShortName">Instruct[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruct[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/Imm" type="array">
+      <obj_property name="ElementShortName">Imm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Imm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/data_1" type="array">
+      <obj_property name="ElementShortName">data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/data_2" type="array">
+      <obj_property name="ElementShortName">data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[0]" type="array">
+      <obj_property name="ElementShortName">[0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[1]" type="array">
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[28]" type="array">
+      <obj_property name="ElementShortName">[28][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/RF/data[29]" type="array">
+      <obj_property name="ElementShortName">[29][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/MUX_ALU" type="array">
+      <obj_property name="ElementShortName">MUX_ALU[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_ALU[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/W_data" type="array">
+      <obj_property name="ElementShortName">W_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/Add_1" type="array">
+      <obj_property name="ElementShortName">Add_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Add_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/Add_2" type="array">
+      <obj_property name="ElementShortName">Add_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Add_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/ALUResult" type="array">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/Read_Mem" type="array">
+      <obj_property name="ElementShortName">Read_Mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim1/test/JumpTo" type="array">
+      <obj_property name="ElementShortName">JumpTo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JumpTo[31:0]</obj_property>
+   </wvobject>
+</wave_config>

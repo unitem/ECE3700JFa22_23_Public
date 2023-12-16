@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/VE370/HW/HW2/problem8/problem8.srcs/sources_1/new/reg_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/campus/VE370/HW/HW2/problem8/problem8.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1

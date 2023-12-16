@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/campus/VE370/lab/lab7backup/lab7.v,1670474832,verilog,,D:/campus/VE370/lab/lab7backup/mux.v,,Main_Memory;New_Cache;PageTable;TLB,,,,,,,,
+D:/campus/VE370/lab/lab7backup/lab7backup.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/campus/VE370/lab/lab7backup/mux.v,1670466224,verilog,,D:/campus/VE370/lab/lab7backup/sim1.v,,MUX_4;MUX_8,,,,,,,,
+D:/campus/VE370/lab/lab7backup/sim1.v,1670465350,verilog,,,,processor;sim1,,,,,,,,
